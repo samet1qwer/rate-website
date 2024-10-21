@@ -15,7 +15,7 @@ function exchange()
     let paraBirimi=birim1.value
     let paraBirimi2=birim2.value
 
-    fetch(`https://api.currencyapi.com/v3/latest?apikey=fca_live_3lKq1jnAsMAeOS3EP9yJ0lI283VwBeh8dbf9OO4l&base_currency=${paraBirimi}`)
+    fetch(`https://api.currencyapi.com/v3/latest?apikey=<your api_key >&base_currency=${paraBirimi}`)
     .then((response)=>response.json())
     .then((result)=>{
         // console.log(result.data[paraBirimi2].value)
